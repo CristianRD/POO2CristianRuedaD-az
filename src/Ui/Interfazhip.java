@@ -6,6 +6,7 @@
 
 package Ui;
 import Businesslogic.Hipotenusa;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Administrador
@@ -104,9 +105,10 @@ public class Interfazhip extends javax.swing.JFrame {
             
         }
         catch (Exception number){
-        
+         JOptionPane.showMessageDialog(this, " no se puede realizar la operación, "
+                    + " puede que no halla ingresado valores "
+                    + "\n o los valores ingresados no son validos", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
-
 // TODO add your handling code here:
     }//GEN-LAST:event_btncalcularActionPerformed
 
